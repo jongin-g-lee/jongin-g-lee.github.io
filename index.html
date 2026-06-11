@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Jongin Lee, Samsung Electronics, Visual Display Business"
+    >
+    <title>Jongin Lee</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f7f4;
+        --text: #1f2428;
+        --muted: #5f686f;
+        --accent: #245b4f;
+        --line: #d8ddd8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(100%, 720px);
+        padding: 56px 28px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 40px;
+        line-height: 1.12;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .role {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .bio {
+        margin: 34px 0 0;
+        padding-top: 28px;
+        border-top: 1px solid var(--line);
+        font-size: 19px;
+      }
+
+      .contact {
+        margin: 30px 0 0;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      a:focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--accent), transparent 68%);
+        outline-offset: 4px;
+      }
+
+      @media (max-width: 520px) {
+        main {
+          padding: 40px 22px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .bio {
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Jongin Lee</h1>
+      <p class="role">
+        Samsung Electronics, Visual Display Business
+      </p>
+
+      <p class="bio">
+        I work on AI-powered applications and evaluation systems for production
+        AI services. My current interests include LLM evaluation, evaluation
+        infrastructure, AI reliability, and deploying AI systems in real-world
+        environments.
+      </p>
+
+      <p class="contact">
+        <a href="mailto:jongin.g.lee@samsung.com">jongin.g.lee@samsung.com</a>
+      </p>
+    </main>
+  </body>
+</html>
